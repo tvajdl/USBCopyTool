@@ -24,7 +24,7 @@ namespace USBCopy_v2
 
         private void linkLabelGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/tvajdl/USBCopy");
+            Process.Start("https://github.com/tvajdl/USBCopyTool");
         }
     }
 }
