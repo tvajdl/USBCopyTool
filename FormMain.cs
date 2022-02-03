@@ -308,7 +308,7 @@ namespace USBCopy_v2
                 {
                     if (usb.DriveType == DriveType.Removable && usb.IsReady)
                     {
-                        
+
                         string root = usb.RootDirectory.Name;
                         string source = openFileDialogBrowse.FileName;
                         string destination = usb.RootDirectory.Name + Path.GetFileName(openFileDialogBrowse.FileName);
@@ -316,10 +316,8 @@ namespace USBCopy_v2
 
                     }
                 }
-                
-
-                
             }
+            else MessageBox.Show("Datoteka ne obstaja!");
         }
 
         public void CopyMethod(object obj)
@@ -331,7 +329,7 @@ namespace USBCopy_v2
             //MessageBox.Show(destination);
 
             FileSystem.CopyFile(source, destination, UIOption.AllDialogs);
-            //AppendTextBox(1, root, 3, root + " kopirano");
+            AppendTextBox(2, root, 3, " kopirano" + Environment.NewLine);
 
 
         }
